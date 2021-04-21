@@ -1,5 +1,5 @@
 [package]
-name = "learn-bevy"
+name = "game1"
 version = "0.1.0"
 authors = ["mimi <allthatjazz@outlook.com>"]
 edition = "2018"
