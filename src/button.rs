@@ -13,6 +13,7 @@ pub struct Display;
 pub struct Normal;
 
 //interaction
+#[derive(Clone, PartialEq)]
 pub enum Status {
     Focused,
     Normal,
@@ -23,9 +24,9 @@ pub type ColorHandle = Handle<ColorMaterial>;
 
 //style resources
 pub struct DisplayStyle {
-    normal: ColorHandle,
-    focused: ColorHandle,
-    disabled: ColorHandle,
+    pub normal: ColorHandle,
+    pub focused: ColorHandle,
+    pub disabled: ColorHandle,
 }
 /* pub struct NormalStyle {
     normal: ColorHandle,
